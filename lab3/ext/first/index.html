@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  href="filestyle/styles/style.css">
+  <title> LAB3 </title>
+</head>
+    
+  <body>
+    <header> 
+      <img id="logo" alt="header_logo" src="filestyle/img/apple.png" />
+      <h1> UNNAMED; </h1>
+      <nav> 
+        <ul>
+          <li> <a href="./file(0).html "> Страница 1 </a></li>
+          <li> <a href="./about/fileInAbout.html"> Страница 2 </a></li>
+          <li> <a href="../file(1).html"> Страница 3 </a></li>
+        </ul>
+      </nav>
+    </header>
+    
+
+  <div id="main_content">
+    <main>
+      <h2> Маркированный список гиперсcылок </h2>
+      <ul>
+        <li> <a href="http://kubsu.ru/" target="_blank"> Главная страница КубГУ (абсолютная гиперссылка) </a> </li>
+        <li> <a href="https://kubsu.ru/" target="_blank"> Главная страница КубГУ (абсолютная гиперссылка в протоколе https) </a> </li>
+        <li> <a href="http://kubsu.ru/" target="_blank"> 
+          <img src="kubgulogo.png" alt="kubgulogo" style="width: 600px"> </a> </li>
+        
+        <li> <a href="file(0).html" target="_blank"> Внутренняя страница (сокращенная ссылка)</a></li>
+        <li> <a href="/index.html" target="_blank"> Ссылка на главную страницу (сокращенная)</a> </li>
+        <li> <a href="index.html#form"> Фрагмент текущей страницы (форма)</a> </li>
+        <li> <a href="https://example.com/page?first=value1&second=value2&third=value3" target="_blank"> Ссылка с тремя параметрами URL</a></li>
+        <li> <a href="https://www.example.com/products?cat=electronics&id=456" target="_blank"> Ссылка с параметром id </a></li>
+        
+        <li> <a href="./file(0).html" target="_blank" > Страница в текущем каталоге (относительная ссылка) </a></li>
+        <li> <a href="./about/fileInAbout.html" target="_blank" > Страница в каталоге about (относительная ссылка) </a></li>
+        <li> <a href="../file(1).html" target="_blank"> Страница в каталоге уровнем выше текущего  (относительная ссылка)</a></li>
+        <li> <a href="../../file(2).html" target="_blank"> Страница в каталоге двумя уровнями выше (относительная ссылка) </a></li>
+        <li> <p> Sir <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Timothy John Berners-Lee </a> (born 8 June 1955), also known as TimBL, is an English computer 
+        scientist best known as the inventor of the World Wide Web, the HTML markup language, the URL system, and HTTP. 
+        He is a professorial research fellow at the University of Oxford
+         and a professor emeritus at the Massachusetts Institute of Technology (MIT). </p> </li>
+        <li> <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee#:~:text=%5B23%5D-,Early%20life,-Berners%2DLee%20was" target="_blank"> Фрагмент страницы стороннего сайта</a></li>
+        <li> <map name="button"> 
+          <area shape="circle" alt="circlekubgu" coords="228,187,70" href="http://kubsu.ru/" target="_blank">
+          </map>
+        <img src="button.png" usemap="#button"
+         style="width: 450px"  alt="logo_button"> </li>
+         <li> <img src="kubgumenu.png" alt="menukubgu" usemap="#kubgu_menu" width="450" >
+          <map name="kubgu_menu"> 
+          <area shape="rect" alt="exam" coords="45,11,241,116" href="https://migrantam.kubsu.ru/" target="_blank">
+          <area shape="rect" alt="info" coords="192,132,393,242" href="https://www.kubsu.ru/ru/sveden" target="_blank">
+          <area shape="rect" alt="line" coords="39,253,242,362" href="https://www.kubsu.ru/node/35429" target="_blank">
+          <area shape="rect" alt="reviews" coords="32,498,240,612" href="https://www.kubsu.ru/ru/public_reception" target="_blank">
+          <area shape="rect" alt="questions" coords="194,375,401,485" href="https://www.kubsu.ru/ru/abiturient/question" target="_blank">
+         </map> </li>
+        <li> <a href=""> Ссылка с пустым href </a> </li>
+        <li> <a > Ссылка без href </a></li>
+        <li> <a href="index.html" target="_blank" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам; </a></li>
+        <li> <a href="index.html" target="_blank" rel="noindex"> Ссылка, запрещенная для индексации поисковиками</a></li>
+        <li> <!--noindex--> часть страницы, закрытая для индексации<!--/noindex--> </li>
+        <li> Нумерованный список: <br/>
+          <ol>
+              <li> <a href="http://kubsu.ru/" title="Сайт Кубанского государственного университета" target="_blank"> КубГУ </a> </li>
+              <li> <a href="https://moodle.org/" title="Платформа Moodle" target="_blank"> Moodle </a></li>
+              <li> <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" title="Создатель URI, URL, HTTP, HTML" target="_blank"> Тим Бернерс-Ли</a></li>
+          </ol> </li>
+        <li> <a href="ftp://user:password@tavalik.ru/Temp/file.txt" target="_blank"> Ссылка на файл на сервере FTP с авторизацией</a></li>
+      </ul>
+    </main>
+      
+      <table>
+        <tr class="tab_head">
+          <th>I</th>
+          <th>II</th>
+          <th> III</th>
+          <th> IV </th>
+        </tr>
+        <tr class="tab1">
+          <td >Ἄνθρωπος</td>
+          <td  colspan="2"> <img alt="1line_img" src="./filestyle/img/1st_line.png" > </td>
+          <td>μέτρον</td>
+        </tr>
+        <tr class="tab2">
+          <td> Ἓν οἶδα</td>
+            <td> ὅτι</td>
+            <td>οὐδὲν</td>
+            <td>οἶδα</td>
+        </tr>
+        <tr class="tab1">
+          <td> Καὶ σὺ</td>
+            <td> τέκνον</td>
+          <td colspan="2"> <img alt="3line_img" src="./filestyle/img/3rd_line.png" > </td>
+        </tr>
+        <tr class="tab2">
+            <td>Ἀπὸ</td>
+          <td >τοῦ</td>
+          <td>ἡλίου</td>
+          <td>μετάστηθι</td>
+        </tr>
+        <tr class="tab1">
+          <td colspan="2"> <img alt="5line_img" src="./filestyle/img/5th_line.png" > </td>
+          <td>Μῆλον τῆς </td>
+          <td>Ἔριδος</td>
+        </tr>
+        <tr class="tab2">
+            <td>Οὖτις</td>
+            <td>ἐμοί</td>
+            <td>γ'</td>
+            <td>ὄνομα</td>
+          </tr>
+      </table>
+    
+      <form action="URL_отправки_данных" method="POST">
+  
+        <h2> ФОРМА </h2>
+
+      <label> 
+        ФИО: <br/>
+        <input name="field-name-1" />
+      </label> <br/>
+  
+      <label> 
+        Номер телефона: <br />
+        <input name="field-number" 
+          type="tel" />
+      </label> <br/>
+  
+      <label>
+        E-mail: <br/>
+        <input name="field-email"
+          type="email" />
+      </label> <br/>
+  
+      <label> 
+        Дата рождения: <br/>
+        <input name="field-date"
+          type="date" />
+      </label> <br/>
+  
+      <label> Пол: <br /> <input type="radio" checked="checked" 
+        name="radio-group-1" value="1" /> Мужской </label>
+      <label> <input type="radio"  name="radio-group-1" 
+        value="2" /> Женский</label> <br/>
+  
+      <label> 
+        Любимый язык программирования: <br/>
+        <select name="field-language"
+          multiple="multiple">
+          <option value="Pascal"> Pascal</option>
+          <option value="C"> C</option>
+          <option value="C++"> C++ </option>
+          <option value="Python"> Python</option>
+          <option value="Java"> Java</option>
+          <option value="JavaScript"> JavaScript</option>
+          <option value="PHP"> PHP</option>
+          <option value="Clojure"> Clojure</option>
+          <option value="Haskel"> Haskel</option>
+          <option value="Prolog"> Prolog</option>
+          <option value="Scala"> Scala</option>
+        </select>
+      </label> <br/>
+  
+      <label>
+        Биография: <br/>
+        <textarea name="field-biography"> </textarea>
+      </label> <br/>
+  
+      <label> <input type="checkbox" name="check" /> 
+        С контрактом ознакомлен 
+      </label> <br/>
+  
+      <input type="submit" value="Сохранить"/> 
+      </form>
+
+  </div>
+
+  <footer>
+    (с) Гребенюкова Дарья
+  </footer>
+  
+  </body>
+</html>
