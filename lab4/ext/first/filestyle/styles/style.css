@@ -1,0 +1,220 @@
+body{
+    background-color: #E9D7BF;
+    background-image: url(../img/backgroundimg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    flex-direction: column;
+    align-content: center;
+}
+.b-header{
+    background:#767F83;
+    width: 100vw;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    height: 26vh;
+}
+#logo{
+    float:left;
+    width: 20vh; 
+    height: 20vh; 
+    margin: 3vh;
+    border-radius:20%;
+}
+h1.NAME{
+    padding-top: 10vh;
+    float: right;
+    text-align: right;
+    font-size:17pt; 
+    color:rgb(251, 231, 217); 
+    font-weight: normal;
+}
+
+.b-nav{
+    border-radius: 10px;
+    background-color: #D4D1D5;
+}
+nav{
+    width: 90vw;
+    height: 16vh;
+    border-radius: 10px;
+    background-color: #D4D1D5;
+}
+nav ul{
+    padding-top: 0%;
+    padding-left: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-right:0.5vh;
+    height: 14vh;
+}
+nav ul li{
+    list-style: none;
+    padding-top:0%;
+    padding-bottom:0%;
+    padding-left:1%;
+    padding-right:1%;
+    height: fit-content;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17pt;
+}
+
+
+main{
+    background-color: #fff7eeb4;
+    border-radius: 20px;
+}
+main h2{
+    margin:auto;
+    padding: 2%;
+    text-align: center;
+}
+main ul{
+    margin: auto;
+}
+main img{
+    max-width: 100%;
+}
+.table_block_dis{
+    background-color: #fff7eeb4;
+    border-radius: 20px;
+    height:100%;
+    text-align: center;
+}
+
+#table_img{
+    width: 20%;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+table{
+    background-color: #fff7eeb4;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 1px;
+    max-width: 100%;
+    display: flex;
+    overflow: scroll;
+    border-radius: 10px;
+}
+table img{
+    max-width: 48vw;
+    height: 18vh;
+    max-height: 180px;
+}
+table th{
+    width:25vw;
+    max-width: 25vw;
+    border-radius: 10px;
+}
+table td{
+    border-radius: 10px;
+}
+table tr.tab_head{
+    background-color:rgba(252, 233, 222, 0.895);
+    height: 5vh;
+}
+table tr.tab1{
+    background-color: #abb7bda9;
+    height: 25vh;
+}
+table tr.tab2{
+    background-color:rgba(252, 233, 222, 0.895);
+    height: 22vh;
+}
+
+form{
+    background-color: #fff7eeb4;
+    border-radius: 20px;
+}
+form h2{
+    margin: auto;
+    padding:1%;
+    text-align: center;
+    font-size:25pt;
+}
+form label, form input, form select, form textarea{
+    margin-left: 3vw;
+    margin-bottom: 2vh;
+}
+form input, form select, form textarea{
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 768px){
+    table{
+        overflow:auto;
+    }
+    #table_img{
+        width: 40%;
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+    }
+    nav{
+        position: absolute;
+        top:0;
+        background-color: #ffffff00;
+        max-height: 13vh;
+        height: 16vh;
+        display: flex;
+        justify-content: right;
+    }
+    nav ul{
+        width: 50vw;
+        max-width: 960px;
+        display: flex;
+    }
+    nav ul li{
+        text-align: center;
+        background-color: #D4D1D5;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        max-width:350px;
+        height:fit-content;
+    }
+}
+
+form option, form input{
+    font-size: 17pt;
+}
+h1, head h1, main h2, form h2, .table_block_dis h2, nav ul li, footer{
+    font-family: "Mac";
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #584141;
+}
+a, p, main ul li, form, form input, form option, table{
+    font-family: "Morf";
+    letter-spacing: 1px;
+    color: #584141;
+}
+a{
+    color: #785b5b;
+}
+a:hover {
+    color: rgb(151, 134, 176);
+}
+footer {
+    padding:2vw;
+    background:#767F83;
+    height: 13vh;
+    max-height: 120px;
+    text-align: left;
+    font-size: 20pt;
+    color : #f0fbff;
+}
+@font-face {
+    font-family: "Mac";
+    src: url( "../fonts/MAK.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Morf";
+    src: url( "../fonts/Kanit-Cyrillic.ttf") format("truetype");
+    font-weight: normal;
+    font-display: swap;
+}
