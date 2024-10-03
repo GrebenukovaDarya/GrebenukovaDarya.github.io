@@ -84,7 +84,8 @@ main img{
 }
 
 #table_img1{
-    width: 20%;
+
+    max-width: 20%;
     margin-bottom: 5vh;
     margin-top: 5vh;
 }
@@ -202,7 +203,6 @@ a:hover {
     color: rgb(151, 134, 176);
 }
 footer {
-    padding:2vw;
     background:#767F83;
     height: 13vh;
     max-height: 120px;
