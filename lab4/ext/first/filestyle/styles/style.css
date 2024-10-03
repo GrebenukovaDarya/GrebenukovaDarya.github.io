@@ -83,7 +83,12 @@ main img{
     text-align: center;
 }
 
-#table_img{
+#table_img1{
+    width: 20%;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+#table_img2{
     width: 20%;
     margin-bottom: 5vh;
     margin-top: 5vh;
