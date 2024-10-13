@@ -3,6 +3,8 @@ function updatePrice() {
     let prices = getPrices();
     let checkDiv = document.getElementById("checkboxes");
     let selectDiv = document.getElementById("goods_options");
+    let check_var = 0;
+    let select_var = 0;
 
     let radios = document.getElementsByName("goods");
     radios.forEach(function (radio) {
@@ -15,14 +17,18 @@ function updatePrice() {
                 radio.value === "g_5"
             ) {
                 checkDiv.style.display = "none";
+                check_var = 0;
             } else {
                 checkDiv.style.display = "block";
+                check_var = 1;
             }
             //select
             if (radio.value === "g_1" || radio.value === "g_3") {
                 selectDiv.style.display = "none";
+                select_var = 0;
             } else {
                 selectDiv.style.display = "block";
+                select_var = 1;
             }
         }
     });
@@ -30,7 +36,7 @@ function updatePrice() {
     // Смотрим какая товарная опция выбрана.
     let s = document.getElementsByName("g_options");
     let select = s[0].value;
-    if (select !== undefined) {
+    if (select !== undefined && select_var === 1) {
         price += prices.g_Options[select];
     }
 
@@ -39,7 +45,7 @@ function updatePrice() {
     checkboxes.forEach(function (checkbox) {
         if (checkbox.checked) {
             let g_Price = prices.g_Properties[checkbox.name];
-            if (g_Price !== undefined) {
+            if (g_Price !== undefined && check_var === 1) {
                 price += g_Price;
             }
         }
