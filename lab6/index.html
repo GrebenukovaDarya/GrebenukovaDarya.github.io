@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="calc.js" defer></script>
+    <link rel="stylesheet"  href="filestyle/style.css">
+    <title> LAB6 </title>
+</head>
+
+<body>
+    <form>
+        <p> Количество товара: </p>
+        <input name="amount" type="number"> 
+        <br>
+
+        <p> Вид товара: </p>
+        <div class="myradios" id="myradios">
+            <label><input type="radio" name="goods" value="g_1"> Товар 1 </label>
+            <label><input type="radio" name="goods" value="g_2"> Товар 2 </label>
+            <label><input type="radio" name="goods" value="g_3"> Товар 3 </label>
+            <label><input type="radio" name="goods" value="g_4"> Товар 4 </label>
+            <label><input type="radio" name="goods" value="g_5"> Товар 5 </label>
+        </div> 
+        <br>
+         
+        <select name="g_options" id="goods_options">
+            <option value="option_1"> Без дополнительных опций </option>
+            <option value="option_2"> Опция 1 </option>
+            <option value="option_3"> Опция 2 </option>
+        </select>
+        <br>
+
+        <div id="checkboxes">
+            <label><input type="checkbox" name="property_1" /> Свойство 1 </label>
+            <label><input type="checkbox" name="property_2" /> Свойство 2 </label>
+            <label><input type="checkbox" name="property_3" /> Свойство 3 </label>
+        </div>
+        <br>
+
+    </form>
+
+    <div id="result">-Стоимость товара-</div>
+
+</body>
+</html>
