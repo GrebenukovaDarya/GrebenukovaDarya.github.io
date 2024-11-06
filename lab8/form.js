@@ -27,7 +27,7 @@ $(function() {
       
         $.ajax({
             type: "POST",
-            url: "https://formcarry.com/s/OJho_vGPq5u",
+            url: "https://formcarry.com/s/5HKia9oLyPf",
             data: new FormData(this),
             dataType: "json",
             processData: false,
