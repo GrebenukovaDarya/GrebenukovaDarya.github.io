@@ -1,15 +1,14 @@
 const openBtn = document.getElementById("open-form");
 
-
 openBtn.addEventListener("click", () => {
     popup.style.display = "block";
     overlay.classList.add("show");
 });
+
 /*
 var json = '{"key": "Пуск"}';
 var obj = JSON.parse(json);
 alert(obj.key);
-*/
 
 window.history.pushState('', '', 'new.html');
 
@@ -18,6 +17,7 @@ window.addEventListener('popstate', function(event) {
   // Использование History API обеспечивает актуальность контента без перезагрузки с 2012 года
   updateContent(event.state.content);
 });
+*/
 
 
 $(function() {
