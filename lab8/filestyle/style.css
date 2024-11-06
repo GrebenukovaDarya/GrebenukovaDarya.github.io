@@ -49,7 +49,7 @@ form input, form select, form option, select, button{
 form, form input, form option, select{
     font-size: 16pt;
 }
-form h2, form, form input, form option, select, button{
+form h2, form, form input, form option, select, button, textarea{
     font-family: "Mac";
     letter-spacing: 1px;
     color: #272931;
