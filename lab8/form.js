@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       openBtn.addEventListener("click", () => {
         popup.style.display = "block";
         overlay.classList.add("show");
-        window.history.pushState('', '', 'index1.html');
+        window.history.pushState('', '', 'form.html');
       });
 
 // Получаем элементы формы
