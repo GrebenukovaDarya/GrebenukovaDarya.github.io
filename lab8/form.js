@@ -31,7 +31,7 @@ form.addEventListener('input', function(event) {
     localStorage.setItem(event.target.name, event.target.value);
 });
 
-/*
+
 // Обработка событий навигации для контроля за поведением при переходах
 window.addEventListener('popstate', function(event) {
   if(popup.style.display=="block")
@@ -43,7 +43,7 @@ window.addEventListener('popstate', function(event) {
   updateContent(event.state.content);
 });
 
-*/
+
 
 $(function() {
     $(".formcarryForm").submit(function(e){
