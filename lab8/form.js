@@ -1,6 +1,8 @@
 window.addEventListener("DOMContentLoaded", (event) => {
     const openBtn = document.getElementById("open-form");
       openBtn.addEventListener("click", () => {
+        const popup = document.getElementById("popup");
+        const overlay = document.getElementById("overlay");
         popup.style.display = "block";
         overlay.classList.add("show");
         window.history.pushState('', '', 'form.html');
