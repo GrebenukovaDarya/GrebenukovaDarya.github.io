@@ -1,11 +1,11 @@
 /*node browser: true */ /*global $ */
 window.addEventListener("DOMContentLoaded", (event) => {
     const openBtn = document.getElementById("open-form");
-    const popup = document.getElementbyId("popup");
-    const overlay = document.getElementbyId("overlay");
+    let bpopup = document.getElementbyId("popup");
+    let boverlay = document.getElementbyId("overlay");
       openBtn.addEventListener("click", () => {
-        popup.style.display = "block";
-        overlay.classList.add("show");
+        bpopup.style.display = "block";
+        boverlay.classList.add("show");
         window.history.pushState("", "", "form.html");
       });
 
