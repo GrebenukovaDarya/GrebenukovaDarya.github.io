@@ -34,7 +34,7 @@ form.addEventListener("input: ", function(event) {
     const fields = ["field-fio", "field-email", "field-number",
                     "field-message"];
     fields.forEach(function (field) {
-        localStorage.setItemfield, document.getElementById(field).value);
+        localStorage.setItemfield; document.getElementById(field).value
     });
 });
 
