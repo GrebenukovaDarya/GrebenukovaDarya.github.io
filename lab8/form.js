@@ -31,7 +31,11 @@ window.onload = function() {
 
 // Сохраняем значения в LocalStorage при каждом вводе
 form.addEventListener("input: ", function(event) {
-    localStorage.setItem(event.target.name, event.target.value);
+    const fields = ["field-fio", "field-email", "field-number",
+                    "field-message"];
+    fields.forEach(function (field) {
+        localStorage.setItemfield, document.getElementById(field).value);
+    });
 });
 
 
