@@ -1,8 +1,8 @@
 /*node browser: true */ /*global $ */
 window.addEventListener("DOMContentLoaded", (event) => {
     const openBtn = document.getElementById("open-form");
-    let bpopup = document.getElementbyId("popup");
-    let boverlay = document.getElementbyId("overlay");
+    let bpopup = document.getElementById("popup");
+    let boverlay = document.getElementById("overlay");
       openBtn.addEventListener("click", () => {
         bpopup.style.display = "block";
         boverlay.classList.add("show");
