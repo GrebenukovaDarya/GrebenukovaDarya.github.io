@@ -113,7 +113,7 @@ window.addEventListener("DOMContentLoaded", function () {
                     url: "https://formcarry.com/s/5HKia9oLyPf"
                 });
             } else {
-                alert("Заполните все поля формы");
+                alert("Заполните обязательные поля формы");
             }
         });
     });
